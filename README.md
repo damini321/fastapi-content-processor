@@ -1,8 +1,9 @@
-# FastAPI Content Processor
+# FastAPI Content Processor and Traffic Data Analysis
 
-This project is a backend service built using FastAPI that provides three main APIs for processing web content, PDF documents, and querying the processed content using a chat interface.
+1. **FastAPI Content Processor:**
+    This project is a backend service built using FastAPI that provides three main APIs for processing web content, PDF documents, and querying the processed content using a chat interface.
 
-## Features
+## Features -
 
 1. **Process Web URL API:**
    - Scrapes content from a given URL and stores it.
@@ -15,6 +16,17 @@ This project is a backend service built using FastAPI that provides three main A
 3. **Chat API:**
    - Allows users to query the processed content (either from a URL or a PDF) using a chat interface.
    - Utilizes embeddings to find relevant responses based on the user's question.
+
+2. **Traffic Data Analysis:**
+    Analyzes web traffic data to gain insights into pageviews, event types, geographical distribution, Click-Through Rate (CTR), and correlation between clicks and pageviews.
+
+## Features -
+
+- Total and Daily Pageviews: Calculates the total number of pageviews and the average number of pageviews per day.
+- Event Types Distribution: Provides the total count and distribution of different event types.
+- Geographical Distribution: Shows pageviews by country.
+- Click-Through Rate (CTR) Analysis: Computes the overall CTR and CTR by link.
+- Correlation Analysis: Analyzes the correlation between clicks and pageviews.
 
 ## Getting Started
 
@@ -96,11 +108,21 @@ This project is a backend service built using FastAPI that provides three main A
     - Sentence-Transformers
     - Requests
     - Python-Multipart
+    - pandas
+    - scipy
 
 ## Testing
 #### To test the APIs:
 - Use tools like Postman or curl to make requests to the running service.
 - Ensure all endpoints are working as expected.
+
+## Usage - Traffic Data Analysis
+- Ensure you have the required libraries installed.
+
+- Place the traffic.csv file in the same directory as the script.
+
+- Run the script:
+    python traffic_analysis.py
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.

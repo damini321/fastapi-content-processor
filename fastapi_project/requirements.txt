@@ -5,3 +5,5 @@ pdfplumber
 sentence-transformers
 requests
 python-multipart
+pandas
+scipy
